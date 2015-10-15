@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_scroll_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/app_bar_main"
-    tools:context=".MainActivity">
+    tools:showIn="@layout/app_bar_tro_pla_cho">
 
     <android.support.v7.widget.GridLayout
         android:id="@+id/container"
@@ -21,30 +17,35 @@
         app:orientation="vertical"
         android:stretchColumns="*">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <Button
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/description_1"
-            android:id="@+id/textDescription_1"
-            app:layout_row="0"
-            app:layout_column="0"
+            android:text="5"
+            android:id="@+id/buttonDownload"
+            app:layout_row="6"
             app:layout_columnSpan="2"
-            android:padding="16dp"
-            app:layout_gravity="center_horizontal" />
+            app:layout_column="0"
+            app:layout_gravity="fill_horizontal" />
 
-        <TextView
-            android:layout_width="wrap_content"
+        <Button
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/description_3"
-            android:id="@+id/textDescription_2"
-            app:layout_row="1"
+            android:text="6"
+            android:id="@+id/buttonGet"
+            app:layout_row="7"
             app:layout_column="0"
-            app:layout_columnSpan="2"
-            app:layout_gravity="center_horizontal"
-            android:padding="16dp" />
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            android:visibility="invisible" />
 
-</android.support.v7.widget.GridLayout>
+        <Button
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:id="@+id/buttonPost"
+            app:layout_row="7"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            android:visibility="visible" />
 
+    </android.support.v7.widget.GridLayout>
 </ScrollView>
+
