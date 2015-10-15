@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_tro_pla_cho">
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:columnCount="2"
+        app:rowCount="11"
+        app:orientation="vertical"
+        android:stretchColumns="*">
+
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:id="@+id/buttonDownload"
+            app:layout_row="6"
+            app:layout_columnSpan="2"
+            app:layout_column="0"
+            app:layout_gravity="fill_horizontal" />
+
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:id="@+id/buttonGet"
+            app:layout_row="7"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:id="@+id/buttonPost"
+            app:layout_row="7"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            android:visibility="visible" />
+    </android.support.v7.widget.GridLayout>
+</ScrollView>
+
