@@ -13,11 +13,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:columnCount="2"
-        app:rowCount="10"
+        app:rowCount="11"
         app:orientation="vertical"
         android:stretchColumns="*">
 
-        <Button
+        <ImageButton
             android:layout_height="wrap_content"
             android:text="5"
             android:id="@+id/buttonDownload"
@@ -26,7 +26,7 @@
             app:layout_column="0"
             app:layout_gravity="fill_horizontal" />
 
-        <Button
+        <ImageButton
             android:layout_height="wrap_content"
             android:text="6"
             android:id="@+id/buttonGet"
@@ -34,9 +34,9 @@
             app:layout_column="0"
             app:layout_columnWeight="1"
             app:layout_gravity="fill_horizontal"
-            android:visibility="invisible" />
+            android:visibility="visible" />
 
-        <Button
+        <ImageButton
             android:layout_height="wrap_content"
             android:text="7"
             android:id="@+id/buttonPost"
@@ -45,7 +45,6 @@
             app:layout_columnWeight="1"
             app:layout_gravity="fill_horizontal"
             android:visibility="visible" />
-
     </android.support.v7.widget.GridLayout>
 </ScrollView>
 
