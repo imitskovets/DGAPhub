@@ -71,9 +71,9 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camara) {
-            // Handle the camera action
+            Log.v("CatalogClient", "Item 1 selected from main");
             Intent intent = new Intent(MainActivity.this, TroublePlaceChoicerActivity.class);
-            intent.putExtra("extraBody","extraContent");
+            //intent.putExtra("extraBody","extraContent");
             startActivity(intent);
         } else if (id == R.id.nav_gallery) {
 

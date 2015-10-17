@@ -23,6 +23,11 @@
             android:label="@string/title_activity_trouble_place_choicer"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
+        <activity
+            android:name=".WashroomChoicerActivity"
+            android:label="@string/title_activity_washroom_choicer"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
     </application>
 
 </manifest>

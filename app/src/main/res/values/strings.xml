@@ -5,7 +5,14 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
-    <string name="description_1">description 1</string>
-    <string name="description_3">description 3</string>
     <string name="title_activity_trouble_place_choicer">Choice Place</string>
+    <string name="imgButtonDesc0">Image button 0</string>
+    <string name="imgButtonDesc1">Image button 1</string>
+    <string name="imgButtonDesc2">Image button 2</string>
+    <string name="imgButtonDesc3">Image button 3</string>
+    <string name="imgButtonDesc4">Image button 4</string>
+    <string name="imgButtonDesc5">Image button 5</string>
+    <string name="imgButtonDesc6">Image button 6</string>
+    <string name="imgButtonDesc7">Image button 7</string>
+    <string name="title_activity_washroom_choicer">WashroomChoicerActivity</string>
 </resources>

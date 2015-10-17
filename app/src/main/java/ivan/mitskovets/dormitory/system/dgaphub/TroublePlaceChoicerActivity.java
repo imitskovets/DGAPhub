@@ -1,5 +1,6 @@
 package ivan.mitskovets.dormitory.system.dgaphub;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -27,7 +28,7 @@ public class TroublePlaceChoicerActivity extends AppCompatActivity {
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.v("CatalogClient", "button navigation");
+                Log.v("CatalogClient", "button onBack from trouble place choicer");
                 onBackPressed();
             }
         });
@@ -42,4 +43,31 @@ public class TroublePlaceChoicerActivity extends AppCompatActivity {
         });
     }
 
+    public void onClickImageButton0(View view) {
+        Log.v("CatalogClient", "imgButton 0 click from trouble place choicer");
+        Intent intent = new Intent(TroublePlaceChoicerActivity.this, WashroomChoicerActivity.class);
+        //intent.putExtra("extraBody","extraContent");
+        startActivity(intent);
+    }
+
+    public void onClickImageButton1(View view) {
+    }
+
+    public void onClickImageButton2(View view) {
+    }
+
+    public void onClickImageButton3(View view) {
+    }
+
+    public void onClickImageButton4(View view) {
+    }
+
+    public void onClickImageButton5(View view) {
+    }
+
+    public void onClickImageButton6(View view) {
+    }
+
+    public void onClickImageButton7(View view) {
+    }
 }
