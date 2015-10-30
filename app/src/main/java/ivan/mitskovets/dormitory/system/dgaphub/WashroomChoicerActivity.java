@@ -45,8 +45,6 @@ public class WashroomChoicerActivity extends AppCompatActivity {
         });
 
         final GridLayout gridLayout = (GridLayout) findViewById(R.id.washroom_GridLayout);
-        //final Toolbar tool = (Toolbar) findViewById(R.id.toolbar_tro_pla_cho);
-        //final FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         gridLayout.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
             @Override
             public void onGlobalLayout() {
@@ -155,4 +153,51 @@ public class WashroomChoicerActivity extends AppCompatActivity {
     }
 
 
+    public void hanger_0_OnClick(View view) {
+    }
+
+    public void sill_OnClick(View view) {
+    }
+
+    public void hanger_1_OnClick(View view) {
+    }
+
+    public void tap_0_OnClick(View view) {
+    }
+
+    public void sink_0_OnClick(View view) {
+    }
+
+    public void sink_1_OnClick(View view) {
+    }
+
+    public void tap_1_OnClick(View view) {
+    }
+
+    public void tap_2_OnClick(View view) {
+    }
+
+    public void sink_2_OnClick(View view) {
+    }
+
+    public void sink_3_OnClick(View view) {
+    }
+
+    public void tap_3_OnClick(View view) {
+    }
+
+    public void tap_4_OnClick(View view) {
+    }
+
+    public void sink_4_OnClick(View view) {
+    }
+
+    public void sink_5_OnClick(View view) {
+    }
+
+    public void tap_5_OnClick(View view) {
+    }
+
+    public void trashcan_OnClick(View view) {
+    }
 }

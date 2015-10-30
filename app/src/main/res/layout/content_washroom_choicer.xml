@@ -27,19 +27,21 @@
             android:id="@+id/hanger_0"
             android:background="@mipmap/kitchen"
             android:layout_column="0"
-            android:onClick="ImgButtonOnClick0"/>
+            android:onClick="hanger_0_OnClick"/>
 
         <ImageButton
             android:id="@+id/sill"
             android:background="@mipmap/kitchen"
             android:layout_gravity="fill"
             android:layout_column="2"
-            android:layout_columnSpan="3"/>
+            android:layout_columnSpan="3"
+            android:onClick="sill_OnClick"/>
 
         <ImageButton
             android:id="@+id/hanger_1"
             android:background="@mipmap/kitchen"
-            android:layout_column="6" />
+            android:layout_column="6"
+            android:onClick="hanger_1_OnClick"/>
         <ImageButton
             android:id="@+id/sizer_0x1"
             android:background="@mipmap/kitchen"
@@ -51,7 +53,8 @@
             android:layout_rowSpan="2"
             android:layout_row="2"
             android:layout_column="0"
-            android:layout_gravity="fill"/>
+            android:layout_gravity="fill"
+            android:onClick="tap_0_OnClick"/>
         <ImageButton
             android:id="@+id/sink_0"
             android:background="@mipmap/kitchen"
@@ -59,7 +62,8 @@
             android:layout_columnSpan="2"
             android:layout_row="2"
             android:layout_column="1"
-            android:layout_gravity="fill"/>
+            android:layout_gravity="fill"
+            android:onClick="sink_0_OnClick"/>
         <ImageButton
             android:id="@+id/sizer_2x3"
             android:background="@mipmap/kitchen"
@@ -73,14 +77,16 @@
             android:layout_columnSpan="2"
             android:layout_row="2"
             android:layout_column="4"
-            android:layout_gravity="fill"/>
+            android:layout_gravity="fill"
+            android:onClick="sink_1_OnClick"/>
         <ImageButton
             android:id="@+id/tap_1"
             android:background="@mipmap/kitchen"
             android:layout_rowSpan="2"
             android:layout_row="2"
             android:layout_column="6"
-            android:layout_gravity="fill"/>
+            android:layout_gravity="fill"
+            android:onClick="tap_1_OnClick"/>
 
         <ImageButton
             android:id="@+id/sizer_3x3"
@@ -94,7 +100,8 @@
             android:layout_rowSpan="2"
             android:layout_row="4"
             android:layout_column="0"
-            android:layout_gravity="fill"/>
+            android:layout_gravity="fill"
+            android:onClick="tap_2_OnClick"/>
         <ImageButton
             android:id="@+id/sink_2"
             android:background="@mipmap/kitchen"
@@ -102,7 +109,8 @@
             android:layout_columnSpan="2"
             android:layout_row="4"
             android:layout_column="1"
-            android:layout_gravity="fill"/>
+            android:layout_gravity="fill"
+            android:onClick="sink_2_OnClick"/>
         <ImageButton
             android:id="@+id/sizer_4x3"
             android:background="@mipmap/kitchen"
@@ -114,14 +122,16 @@
             android:layout_columnSpan="2"
             android:layout_row="4"
             android:layout_column="4"
-            android:layout_gravity="fill"/>
+            android:layout_gravity="fill"
+            android:onClick="sink_3_OnClick"/>
         <ImageButton
             android:id="@+id/tap_3"
             android:background="@mipmap/kitchen"
             android:layout_rowSpan="2"
             android:layout_row="4"
             android:layout_column="6"
-            android:layout_gravity="fill"/>
+            android:layout_gravity="fill"
+            android:onClick="tap_3_OnClick"/>
         <ImageButton
             android:id="@+id/sizer_5x3"
             android:background="@mipmap/kitchen"
@@ -134,7 +144,8 @@
             android:layout_rowSpan="2"
             android:layout_gravity="fill"
             android:layout_row="6"
-            android:layout_column="0"/>
+            android:layout_column="0"
+            android:onClick="tap_4_OnClick"/>
         <ImageButton
             android:id="@+id/sink_4"
             android:background="@mipmap/kitchen"
@@ -142,7 +153,8 @@
             android:layout_columnSpan="2"
             android:layout_gravity="fill"
             android:layout_row="6"
-            android:layout_column="1"/>
+            android:layout_column="1"
+            android:onClick="sink_4_OnClick"/>
         <ImageButton
             android:id="@+id/sizer_6x3"
             android:background="@mipmap/kitchen"
@@ -154,14 +166,16 @@
             android:layout_columnSpan="2"
             android:layout_row="6"
             android:layout_column="4"
-            android:layout_gravity="fill"/>
+            android:layout_gravity="fill"
+            android:onClick="sink_5_OnClick"/>
         <ImageButton
             android:id="@+id/tap_5"
             android:background="@mipmap/kitchen"
             android:layout_rowSpan="2"
             android:layout_row="6"
             android:layout_column="6"
-            android:layout_gravity="fill"/>
+            android:layout_gravity="fill"
+            android:onClick="tap_5_OnClick"/>
         <ImageButton
             android:id="@+id/sizer_7x3"
             android:background="@mipmap/kitchen"
@@ -179,7 +193,8 @@
             android:layout_columnSpan="2"
             android:layout_row="9"
             android:layout_column="0"
-            android:layout_gravity="fill_horizontal"/>
+            android:layout_gravity="fill_horizontal"
+            android:onClick="trashcan_OnClick"/>
         <ImageButton
             android:id="@+id/sizer_9x1"
             android:background="@mipmap/kitchen"
