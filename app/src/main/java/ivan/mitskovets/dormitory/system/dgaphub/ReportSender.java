@@ -10,9 +10,6 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
 
-/**
- * Created by ivanm on 9/24/2015.
- */
 public class ReportSender extends AsyncTask<String, Void, String> {
 
     public String requestBody="";
