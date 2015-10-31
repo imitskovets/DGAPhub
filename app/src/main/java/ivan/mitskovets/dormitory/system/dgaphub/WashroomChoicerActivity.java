@@ -1,6 +1,5 @@
 package ivan.mitskovets.dormitory.system.dgaphub;
 
-import android.annotation.SuppressLint;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -12,19 +11,22 @@ import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.GridLayout;
 import android.widget.ImageButton;
-import android.widget.RelativeLayout;
+import android.widget.ScrollView;
 
 public class WashroomChoicerActivity extends AppCompatActivity {
 
-    public int grid_height;
-    public int grid_width;
+    public int scrollView_Height;
+    public int scrollView_Width;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_washroom_choicer);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_tro_pla_cho);
+        final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_tro_pla_cho);
         setSupportActionBar(toolbar);
+
+        final GridLayout gridLayout = (GridLayout) findViewById(R.id.washroom_GridLayout);
+        final ScrollView scrollView = (ScrollView) findViewById(R.id.washroom_ScrollView);
 
         toolbar.setNavigationIcon(R.drawable.ic_arrow_back_24dp);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
@@ -44,22 +46,21 @@ public class WashroomChoicerActivity extends AppCompatActivity {
             }
         });
 
-        final GridLayout gridLayout = (GridLayout) findViewById(R.id.washroom_GridLayout);
         gridLayout.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
             @Override
             public void onGlobalLayout() {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-                    gridLayout.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                    scrollView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
                 } else {
-                    gridLayout.getViewTreeObserver().removeGlobalOnLayoutListener(this);
+                    scrollView.getViewTreeObserver().removeGlobalOnLayoutListener(this);
                 }
-                grid_height = gridLayout.getHeight();
-                grid_width = gridLayout.getWidth();
+                scrollView_Height = scrollView.getHeight();
+                scrollView_Width = scrollView.getWidth();
                 // fix sizes
-                int atomWidth = (int)( grid_width / 7 );
-                int atomHeight = (int)( grid_width / 7 );
-                Log.v("CatalogClient", "grid_height = " + String.valueOf(grid_height));
-                Log.v("CatalogClient", "grid_width = " + String.valueOf(grid_width));
+                int atomWidth = (int)( scrollView_Width / 7 );
+                int atomHeight = (int)( (scrollView_Height / 100)*9 );
+                Log.v("CatalogClient", "sv_height = " + String.valueOf(scrollView_Height));
+                Log.v("CatalogClient", "sv_width = " + String.valueOf(scrollView_Width));
                 ImageButton ibsizer_0x1 = (ImageButton) findViewById(R.id.sizer_0x1);
                 ImageButton ibsizer_2x3 = (ImageButton) findViewById(R.id.sizer_2x3);
                 ImageButton ibsizer_3x3 = (ImageButton) findViewById(R.id.sizer_3x3);
