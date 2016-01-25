@@ -71,20 +71,20 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camara) {
+        if (id == R.id.nav_Places) {
             Log.v("CatalogClient", "Item 1 selected from main");
             Intent intent = new Intent(MainActivity.this, TroublePlaceChoicerActivity.class);
             //intent.putExtra("extraBody","extraContent");
             startActivity(intent);
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_Shit1) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_Shit2) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_Shit3) {
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.nav_Shit4) {
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_Shit5) {
 
         }
 

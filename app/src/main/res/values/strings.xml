@@ -6,6 +6,7 @@
 
     <string name="action_settings">Settings</string>
     <string name="title_activity_trouble_place_choicer">Choice Place</string>
+    <string name="button_to_activity_trouble_place_choicer">Places</string>
     <string name="imgButtonDesc0">Image button 0</string>
     <string name="imgButtonDesc1">Image button 1</string>
     <string name="imgButtonDesc2">Image button 2</string>

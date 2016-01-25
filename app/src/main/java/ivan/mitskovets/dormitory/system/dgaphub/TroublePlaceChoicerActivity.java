@@ -29,16 +29,24 @@ public class TroublePlaceChoicerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trouble_place_choicer);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_tro_pla_cho);
-        setSupportActionBar(toolbar);
-        toolbar.setNavigationIcon(R.drawable.ic_arrow_back_24dp);
+
+        Log.v("CatalogClient", "Trouble_Place_Choicer_Activity: onCreate");
+        Toolbar toolbar_tro_pla_cho = (Toolbar) findViewById(R.id.toolbar_tro_pla_cho);
+        setSupportActionBar(toolbar_tro_pla_cho);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //toolbar_tro_pla_cho.setNavigationIcon(R.drawable.ic_arrow_back_24dp);
+        //toolbar.setTitle("Title");
+        //toolbar.setSubtitle("Sub");
+        //toolbar.setLogo(R.drawable.ic_launcher);
+        Log.v("CatalogClient", "Trouble_Place_Choicer_Activity: Create toolbar");
+
         final RelativeLayout relativeLayout = (RelativeLayout) findViewById(R.id.trouble_place_choicer_relativeLayout);
         //GridLayout gridLayout = (GridLayout) findViewById(R.id.trouble_place_choicer_gridLayout);
 
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+        toolbar_tro_pla_cho.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.v("CatalogClient", "button onBack from trouble place choicer");
+                Log.v("CatalogClient", "Trouble_Place_Choicer_Activity: button onBack click");
                 onBackPressed();
             }
         });
@@ -47,12 +55,13 @@ public class TroublePlaceChoicerActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Log.v("CatalogClient", "Trouble_Place_Choicer_Activity: on fab click");
                 Snackbar.make(view, "Upload you own photo of trouble", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
 
-        toolbar.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+        toolbar_tro_pla_cho.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
             @Override
             public void onGlobalLayout() {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
@@ -63,8 +72,8 @@ public class TroublePlaceChoicerActivity extends AppCompatActivity {
                 relativeLayout_Height = relativeLayout.getHeight();
                 int atomHeight = (int) ((relativeLayout_Height / 40) * 9);
                 int atomWidth = atomHeight;
-                Log.v("CatalogClient", "sv_height = " + String.valueOf(relativeLayout_Height));
-                Log.v("CatalogClient", "sv_width = " + String.valueOf(relativeLayout_Width));
+                Log.v("CatalogClient", "Trouble_Place_Choicer_Activity: sv_height = " + String.valueOf(relativeLayout_Height));
+                Log.v("CatalogClient", "Trouble_Place_Choicer_Activity: sv_width = " + String.valueOf(relativeLayout_Width));
                 ImageButton imageButton0 = (ImageButton) findViewById(R.id.imgButton0);
                 ImageButton imageButton1 = (ImageButton) findViewById(R.id.imgButton1);
                 ImageButton imageButton2 = (ImageButton) findViewById(R.id.imgButton2);
@@ -97,7 +106,7 @@ public class TroublePlaceChoicerActivity extends AppCompatActivity {
     }
 
     public void onClickImageButton0(View view) {
-        Log.v("CatalogClient", "imgButton 0 click from trouble place choicer");
+        Log.v("CatalogClient", "Trouble_Place_Choicer_Activity: imgButton 0 click");
         Intent intent = new Intent(TroublePlaceChoicerActivity.this, WashroomChoicerActivity.class);
         //intent.putExtra("extraBody","extraContent");
         startActivity(intent);

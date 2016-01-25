@@ -22,14 +22,17 @@ public class WashroomChoicerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_washroom_choicer);
-        final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_tro_pla_cho);
-        setSupportActionBar(toolbar);
+
+
+        Toolbar toolbar_washroom = (Toolbar) findViewById(R.id.toolbar_washroom);
+        setSupportActionBar(toolbar_washroom);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         final GridLayout gridLayout = (GridLayout) findViewById(R.id.washroom_GridLayout);
         final ScrollView scrollView = (ScrollView) findViewById(R.id.washroom_ScrollView);
 
-        toolbar.setNavigationIcon(R.drawable.ic_arrow_back_24dp);
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+        //toolbar.setNavigationIcon(R.drawable.ic_arrow_back_24dp);
+        toolbar_washroom.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.v("CatalogClient", "button onBack from washroom");

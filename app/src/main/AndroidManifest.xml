@@ -20,13 +20,21 @@
         </activity>
         <activity
             android:name=".TroublePlaceChoicerActivity"
+            android:parentActivityName=".MainActivity"
             android:label="@string/title_activity_trouble_place_choicer"
             android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".WashroomChoicerActivity"
+            android:parentActivityName=".TroublePlaceChoicerActivity"
             android:label="@string/title_activity_washroom_choicer"
             android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TroublePlaceChoicerActivity" />
         </activity>
     </application>
 
